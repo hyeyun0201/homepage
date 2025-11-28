@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYEYUN's Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Pretendard", "Noto Sans KR", sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #5CB85C, #9DD99D);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 5px 0 15px;
+            font-size: 1.1rem;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #5CB85C;
+        }
+
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+            display: none; /* 기본적으로 숨김 */
+        }
+
+        .section.show {
+            opacity: 1;
+            transform: translateY(0);
+            display: block;
+        }
+
+        .section-light {
+            background-color: #f8fff8;
+        }
+
+        .section-dark {
+            background-color: #e8f5e9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .project {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: #5CB85C;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+        .goal-card {
+            background-color: #ffffff;
+            border-left: 6px solid #5CB85C; /* 강조 색상 */
+            padding: 25px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 20px auto;
+            transition: transform 0.3s ease;
+        }
+
+        .goal-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 헤더 -->
+<header>
+    <div class="container">
+        <h1 id="name">JO HYEYUN</h1>
+        <p>전북대학교 스마트팜학과 25학번</p>
+        <nav>
+            <a href="#about">Profile</a>
+            <a href="#projects">Bucket list</a>
+            <a href="#contact">GOAL</a>
+        </nav>
+    </div>
+</header>
+
+<!-- 환영 메시지 -->
+<section id="welcome" class="section">
+  <div class="welcome-box">
+    <h2>Welcome! 💚</h2>
+    <p>
+      안녕하세요! 전북대학교 스마트팜학과 25학번 조혜윤입니다.<br>
+      웹사이트에 방문해 주셔서 감사합니다!
+    </p>
+    <img src="전북대.svg" 
+             alt="프로필 사진" 
+             style="width:220px; margin-top:20px; border-radius:20px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
+  </div>
+</section>
+
+<!-- 소개 섹션 -->
+<section id="about" class="section">
+    <div class="container">
+        <h2>Profile</h2>
+        <p>
+            2006년 2월 1일 출생<br>
+            충주 중앙중학교 졸업<br>
+            충주 예성여자고등학교 졸업<br>
+            전북대학교 스마트팜학과 재학중
+        </p>
+    </div>
+</section>
+
+<!-- 버킷리스트 -->
+<section id="projects" class="section section-light">
+    <div class="container">
+        <h2>Bucket list</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>자기계발</h3>
+                <ul>
+                    <li>한 달에 최소 1권 이상 책 읽기</li>
+                    <li>IT 관련 자격증 취득하기</li>
+                    <li>영어 또는 일본어 기초 회화 공부하기</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>대외활동</h3>
+                <p>대외활동은 대학 생활 속에서 경험할 수 있는 소중한 기회라고 생각한다. 앞으로 이러한 기회들을 적극적으로 찾아보고 참여하고자한다. </p>
+                <ul>
+                    <li>경진대회 한학기에 최소 1개씩 도전하기</li>
+                    <li>서포터즈 활동에 도전하기</li>
+                    <li>언어교육부에서 진행하는 대외활동 참여하기 </li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>운동</h3>
+                 <ul>
+                    <li>테니스 배우기</li>
+                    <li>수영 배우기</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>여행</h3>
+                <ul>
+                    <li>프랑스 여행 가기</li>
+                    <li>아이슬란드 가서 오로라 보기</li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 미래 -->
+<section id="contact" class="section section-dark">
+    <div class="container">
+        <h2>목표</h2>
+        <p>전북대학교 스마트팜학과에서 최신 농업기술과 IT 지식을 적극적으로 배우며 전문성을 쌓을 것이다.  </p>
+    </div>
+</section>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll(".section");
+    const links = document.querySelectorAll("nav a");
+
+    
+    sections.forEach(sec => sec.classList.remove("show"));
+    const welcome = document.getElementById("welcome");
+    welcome.classList.add("show");
+
+    
+    links.forEach(link => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const target = document.getElementById(targetId);
+            if (!target) return;
+
+            
+            sections.forEach(section => section.classList.remove("show"));
+
+            
+            target.classList.add("show");
+
+            
+            target.scrollIntoView({ behavior: "smooth" });
+        });
+    });
+});
+</script>
+
+</body>
+</html>
